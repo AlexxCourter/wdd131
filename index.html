@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Alex Courter</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alex Courter - Home page , introduction , coursework">
+    <meta name="author" content="Alex Courter">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-banner">
+            <h1>WDD 131: Dynamic Web Fundamentals - Alex Courter</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="https://www.linkedin.com/in/alex-courter/" class="nav-link">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" class="nav-link">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/26?lang=eng&id=p12-p13#p12" class="nav-link">Scripture</a></li>
+                <li><a href="#" class="nav-link">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2 class="card_title">About Me</h2>
+            <div class="card_row">
+                <p class="body-text">I am Alex, an aspiring developer and family focused person. I was born in Ohio and currently live with my family in New Jersey. I work as an industry analyst for family-owned consulting company, Accelerated Motion. I want to become a full stack developer because of a dream I've always had to build helpful technology.</p>
+                <img src="images/me.jpg" id="homeProfileImg" class="img-round img-shadow" alt="photo of Alex Courter">
+            </div>
+            <h3 class="centered">Monmouth, New Jersey</h3>
+            <hr>
+            <div class="card_row">
+                <figure>
+                    <img src="images/flag_of_new_jersey.png" alt="image of the state flag of new jersey">
+                    <figcaption class="centered">New Jersey state flag</figcaption>
+                </figure>
+                
+                <p class="body-text">New Jersey is not just a heritage of the United States, being the first to sign the Bill of Rights, but is also home to famous musicians Bon Jovi and Bruce Springsteen. I grew up in Wanamassa, a town named for a tribe of Lenni Lenape native Americans. There are deep roots for many cultures here.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card_title">Web Dev Resources</h2>
+            <div class="card_row">
+                    <ul>
+                        <li><a class="nav-link_vertical" href="https://coolors.co/">Coolors color palette generator</a></li>
+                        <li><a class="nav-link_vertical" href="https://www.justinmind.com/">Justinmind wireframe designer</a></li>
+                        <li><a class="nav-link_vertical" href="https://placekitten.com/">Placekitten placeholder cat images</a></li>
+                        <li><a class="nav-link_vertical" href="https://angular.dev/">Angular developer docs</a></li>
+                        <li><a class="nav-link_vertical" href="https://pickcoloronline.com/">web-based color picker</a></li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alex Courter | New Jersey</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
