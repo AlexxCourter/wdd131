@@ -12,7 +12,7 @@ class DateManager {
     }
 
     genLastModified(){
-        this.lastModified = new Date(document.lastModified);
+        this.lastModified = document.lastModified;
     }
 
     displayLastModified(){
