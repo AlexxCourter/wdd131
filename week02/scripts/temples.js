@@ -54,6 +54,13 @@ class HamburgerMenu {
     }
 }
 
+function pageTitle(){
+    const pageTitleEl = document.getElementById('page-title');
+    const activePageEl = document.querySelector('.active');
+
+    pageTitleEl.textContent = activePageEl.textContent;
+}
+
 function main() {
     const manager = new DateManager();
 
@@ -67,6 +74,8 @@ function main() {
 
     currentYear.innerHTML = manager.displayCopyYear();
     lastModified.innerHTML = `Last modified: ${manager.displayLastModified()}`;
+
+    pageTitle();
 }
 
 main();
