@@ -29,6 +29,13 @@ header {
     font-family: var(--header-font);
 }
 
+h2 {
+    font-family: var(--header-font);
+}
+figcaption {
+    font-family: var(--body-font);
+}
+
 #site-title {
     font-size: 1.5rem;
     margin: 0 0.5rem;
