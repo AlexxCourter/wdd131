@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Places , Japan , Osaka , weather , stats">
+    <meta name="author" content="Alex Courter">
+    <title>Osaka Japan</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Osaka Japan</h1>
+        <div class="decoration"></div>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture class="hero">
+                <source media="(min-width: 750px)" srcset="images/osaka-large.webp">
+                <img src="images/osaka-small.webp" width="400" height="480" alt="Photo from Osaka Castle">
+            </picture>
+        </div>
+        <div class="card card_data">
+            <h2>Data</h2>
+            <div class="card-content">
+                <p><strong>🗺️ Area:</strong> 225 sq. km</p>
+                <p><strong>👥 Population:</strong> 18.3 Million</p>
+                <p><strong>🗾 Capital:</strong> Tokyo, Japan</p>
+                <p><strong>🗣️ Languages:</strong> Japanese</p>
+                <p><strong>💹 Currency:</strong> Japanese Yen</p>
+                <p><strong>🕰️ Time Zone:</strong> UTC+9</p>
+                <p><strong>📞 Calling Code:</strong> +81</p>
+                <p><strong>🖥️ Internet TLD:</strong> .jp</p>
+            </div>
+        </div>
+        <div class="card card_weather">
+            <h2>Weather </h2>
+            <img class="weather_icon" src="images/cloudy-weather.svg" width="75" height="75" alt="cloudy weather">
+            <div class="card-content">
+                <p><strong>Temperature:</strong> 2 &deg;C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong>7 km/h</p>
+                <p><strong>Wind Chill:</strong><span id="windChill"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alex Courter | New Jersey</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

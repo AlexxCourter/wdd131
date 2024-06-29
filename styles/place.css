@@ -1,0 +1,136 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --header-font: sans-serif;
+    --body-font: serif;
+    --osaka-green: #234837;
+    --osaka-gold: #ffe266;
+    --card-color: rgba(255, 236, 149, 0.70);
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+}
+
+p, a, li {
+    font-family: var(--body-font);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 95vh;
+}
+
+header {
+    background-color: var(--osaka-green);
+    color: var(--osaka-gold);
+    
+    text-align: center;
+}
+
+.page-title {
+    padding: 1rem;
+}
+
+.decoration {
+    width: 100%;
+    padding: 0.4rem 0;
+    background-color: var(--osaka-gold);
+    max-height: 0.8rem;
+    
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: grid;
+}
+
+.card {
+    text-align: center;
+    background-color: var(--card-color);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+.card h2 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--osaka-green);
+    color: var(--osaka-gold);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -0.26rem;
+}
+
+/* large view */
+@media screen and (min-width: 750px) {
+    main {
+        height: fit-content;
+    }
+    body {
+        min-height: 0;
+    }
+
+    .card_data {
+        grid-row: 1;
+        grid-column: 1;
+        width: 300px;
+        z-index: 2;
+        justify-self: start;
+        align-self: start;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .hero-container {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .card_weather {
+        grid-row: 1;
+        grid-column: 2;
+        width: 300px;
+        z-index: 2;
+        justify-self: end;
+        align-self: end;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .card h2 {
+        padding: 0.5rem 1rem;
+        background-color: var(--osaka-green);
+        color: var(--osaka-gold);
+        margin-left: -1.5rem;
+        text-align: left;
+        
+    }
+    .card_weather h2::after {
+        content: "🌤️";
+    }
+    .weather_icon {
+        display: none;
+    }
+    .card {
+        box-shadow: 4px 4px 10px;
+    }
+    .card-content {
+        text-align: left;
+    }
+}
