@@ -7,8 +7,8 @@
 }
 
 :root {
-    --header-font: sans-serif;
-    --body-font: serif;
+    --header-font: "BioRhyme", serif;
+    --body-font: 'Montserrat', sans-serif;
     --osaka-green: #234837;
     --osaka-gold: #ffe266;
     --card-color: rgba(255, 236, 149, 0.70);
@@ -37,6 +37,7 @@ header {
 
 .page-title {
     padding: 1rem;
+    font-size: 2.5rem;
 }
 
 .decoration {
