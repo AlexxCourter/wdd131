@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+tbody tr:nth-child(2) {
+    background-color: rgba(219, 218, 218, 0.433);
+}
+
+td, th {
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+thead {
+    color: white;
+    background-color: black;
+}
+
+thead th {
+    background-color: gray;
+}
+
+thead th:first-child {
+    background-color: black;
+    border: none;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 1rem auto;
+}

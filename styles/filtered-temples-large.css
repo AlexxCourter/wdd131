@@ -1,0 +1,26 @@
+@media screen and (min-width: 650px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .site-nav {
+        padding: 0;
+        display: block;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #site-title {
+        padding: 0.5rem;
+        font-size: 1.75rem;
+    }
+
+}
