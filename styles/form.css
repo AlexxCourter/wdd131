@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ----- FORM STYLES ----- */
+
+.pr {
+    border: 1px solid #888;
+    border-radius: 4px;
+    max-width: 500px;
+
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.pr #design, .pr #review {
+    margin-bottom: 1rem;
+}
+
+.rating {
+    margin-top: 1rem;
+}
+
+.pr input[type="text"],
+.pr input[type="date"],
+.pr .check,
+.pr textarea,
+.pr select {
+    display: block;
+}
+
+.pr select, .pr input[type="date"], .pr input[type="text"] {
+    width: 100%;
+    padding: 10px 0.5rem;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #999;
+}
+
+/* styling for the star rating is based on
+this code-pen by Nevin Katz - https://codepen.io/nevkatz/pen/OJPBBpL */
+.rate-product {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 0.3rem;
+}
+
+.rate-product input {
+    display: none;
+}
+
+.rate-product label {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    display: block;
+    color: rgb(201, 201, 201);
+    
+}
+
+.rate-product label::before {
+    content: '\2605';
+    position: absolute;
+    top: 0;
+    line-height: 35px;
+    font-size: 2rem;
+    
+}
+
+.rate-product label:hover {
+    cursor: pointer;
+    color: orangered;
+    transition: color 0.4s ease;
+}
+
+.rate-product input:checked ~ label::before {
+    color: gold;
+    transition: color 0.3s ease;
+}
+
+.rate-product input:checked ~ label:hover::before {
+    color: orangered;
+}
+
+.pr .features {
+    margin: 1rem 0 0.2rem;
+}
+
+.pr .check {
+    margin: 0.3rem 0;
+}
+
+.pr textarea {
+    width: 100%;
+}
+
+.blue {
+    color: blue;
+}
+
+.pr input[type="submit"] {
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(purple, magenta);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+}

@@ -226,7 +226,7 @@ function setNavListeners(){
 /**
  * main
  * establishes the DateManager and HanburgerMenu which control date functions and the menu button respectively.
- * 
+ * edits the page, adding dynamic representations of the current year and date page was modified.
  */
 function main() {
     const manager = new DateManager();
@@ -242,7 +242,7 @@ function main() {
     currentYear.innerHTML = manager.displayCopyYear();
     lastModified.innerHTML = `Last modified: ${manager.displayLastModified()}`;
 
-    pageTitle();
+    // pageTitle();
     //initial page load
     templeCardGenerator(temples);
     //see filtered content by setting link listeners

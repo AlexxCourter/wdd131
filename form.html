@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Fundamentals - Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+    <main>
+        <form action="review.html" method="get" class="pr">
+            <label>Product Name <select name="product" id="product" required>
+                <option value="" selected disabled>Select a Product...</option>
+                <!-- generate options from product Array -->
+            </select></label>
+            <div class="rating">Overall rating:</div>
+            <div class="rate-product">
+                <!-- the order is being inverted via CSS in order to provide proper ordering left-right -->
+                <input type="radio" name="rating" id="rate5" value="5"><label for="rate5"></label>
+                <input type="radio" name="rating" id="rate4" value="4"><label for="rate4"></label>
+                <input type="radio" name="rating" id="rate3" value="3"><label for="rate3"></label>
+                <input type="radio" name="rating" id="rate2" value="2"><label for="rate2"></label>
+                <input type="radio" name="rating" id="rate1" value="1"><label for="rate1"></label>
+            </div>
+            <label>Date of Installation<input type="date" name="install" id="install" required></label>
+            <div class="features">
+                Which features did you find useful in the product? (check all that apply)
+            </div>
+            <label class="check"><input type="checkbox" name="durability" id="durability"> Durability</label>
+            <label class="check"><input type="checkbox" name="ease" id="ease"> Ease of Use</label>
+            <label class="check"><input type="checkbox" name="performance" id="performance"> Performance</label>
+            <label class="check"><input type="checkbox" name="design" id="design"> Design</label>
+            
+            <label>Written Review <span class="blue">(Optional)</span><textarea name="review" id="review" rows="6"></textarea></label>
+            <label>Your Name <span class="blue">(Optional)</span><input type="text" name="username" id="username"></label>
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alex Courter | New Jersey</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
