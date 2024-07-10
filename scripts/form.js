@@ -104,6 +104,9 @@ function main(){
     let reviewCount = getReviewCount() || 0;
     countReviews(reviewCount);
     if(document.getElementById('reviewCount')){
+        if(reviewCount == 0){
+            reviewCount = 1; //ensures not left at 0 on first load
+        }
         document.getElementById('reviewCount').textContent = reviewCount;
     }
 
