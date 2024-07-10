@@ -13,17 +13,27 @@ header {
     margin-bottom: 0.5rem;
 }
 
+main {
+    width: 100%;
+    padding: 1rem;
+}
 
 /* ----- FORM STYLES ----- */
+
 
 .pr {
     border: 1px solid #888;
     border-radius: 4px;
     max-width: 500px;
-
+    width: 100%;
+    
     padding: 1rem;
-    margin-left: 1rem;
+    
     font-size: 1.1rem;
+}
+
+.pr * {
+    max-width: 100%;
 }
 
 .pr #design, .pr #review {
