@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Project Site Plan</title>
+
+    <meta name="description" content="Site plan, project plan, wireframe, typography, example website">
+    <meta name="author" content="Alex Courter">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <script src="./scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <header id="top">
+        <div>
+            <span>🪙</span><h1>TimeBank</h1>
+        </div>
+        <button class="menu-btn" type="button" title="menu" aria-label="menu"></button>
+        <nav class="site-nav">
+            <ul class="navbar">
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#scenarios">Scenarios</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#wireframe">Wireframe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="site-name">
+            <h2>TimeBank Planner and Scheduling</h2>
+            <p>The name of the app suggests the unique time management principle by calling it a "time bank", and also lets the user know that the primary functions are "planning" and "scheduling"</p>
+        </section>
+        <section class="site-purpose" id="purpose">
+            <h2>Purpose: for people who value their time</h2>
+            <p>The app provides time management tools that cater to the needs of both professional and personal use to help reduce time wasters, and plan schedules critically and effectively.</p>
+        </section>
+        <section class="scenarios" id="scenarios">
+            <h2>Scenarios: Use Case Questions</h2>
+            <p class="card q1">How much time do I really have to get this done?</p>
+            <p class="card q2">Where is all my time going?! I never have any time!</p>
+        </section>
+        <section class="colors" id="colors">
+            <h2>Color Schema</h2>
+            <div class="pallete">
+                <div class="color1">#CCC9DC</div>
+                <div class="color2">#433A3F</div>
+                <div class="color3">#3D5A6C</div>
+                <div class="color4">#94E8B4</div>
+            </div>
+            <div class="color_examples">
+                <p class="header_example">Headings</p>
+                <p>Body text color: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe in excepturi animi, illum facere molestiae ducimus vel quos praesentium ipsa temporibus atque adipisci officia odio possimus nobis iusto labore voluptates!</p>
+                <div class="logo_example"><span>🪙</span><p>TimeBank</p><span class="logo_example_desc">[Logo, header, footer BG]</span></div>
+                <div class="card">Card Background / Accent</div>
+            </div>
+        </section>
+        <section class="typography" id="typography">
+            <h2>Typography</h2>
+            <p class="card header_example">Headers: "PT Serif Caption", serif</p>
+            <p class="card body_example">Body text: "Ubuntu", sans-serif</p>
+        </section>
+        <section class="wireframe" id="wireframe">
+            <h2>Wireframe</h2>
+            <picture>
+                <source media="(min-width: 630px)" srcset="./images/wf_large.webp">
+                <img src="./images/wf_small.webp" width="391" height="1000" loading="lazy" alt="site wireframe">
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alex Courter | New Jersey</p>
+        <p id="lastModified"></p>
+
+        <a href="#top" class="to-top" title="back to top">&#8679;</a>
+    </footer>
+</body>
+</html>
