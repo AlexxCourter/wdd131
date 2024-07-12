@@ -223,9 +223,11 @@ footer {
         flex-direction: row;
         width: fit-content;
         flex-basis:50%;
+        justify-content: right;
     }
     .navbar {
         flex-direction: row;
+        
     }
     .navbar li {
         display: inline-block;
