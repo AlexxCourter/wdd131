@@ -59,6 +59,8 @@ header span, header h1, .logo_example span, .logo_example p {
 }
 .navbar li a:hover {
     background-color: var(--accent);
+    border-radius: 6px;
+    transition: 0.5s ease;
 }
 
 
@@ -214,6 +216,9 @@ footer {
 }
 
 @media screen and (min-width: 750px) {
+    header {
+        padding: 0.3rem;
+    }
     .menu-btn {
         display: none;
     }
