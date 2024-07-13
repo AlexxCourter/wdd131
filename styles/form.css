@@ -60,6 +60,11 @@ main {
     border: 1px solid #999;
 }
 
+.red {
+    color: red;
+}
+
+
 /* styling for the star rating is based on
 this code-pen by Nevin Katz - https://codepen.io/nevkatz/pen/OJPBBpL */
 .rate-product {

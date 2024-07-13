@@ -15,20 +15,20 @@
     <header><h1>Product Review</h1></header>
     <main>
         <form action="review.html" method="get" class="pr">
-            <label>Product Name <select name="product" id="product" required>
+            <label>Product Name<span class="red">*</span> <select name="product" id="product" required>
                 <option value="" selected disabled>Select a Product...</option>
                 <!-- generate options from product Array -->
             </select></label>
-            <div class="rating">Overall rating:</div>
+            <div class="rating">Overall rating<span class="red">*</span></div>
             <div class="rate-product">
                 <!-- the order is being inverted via CSS in order to provide proper ordering left-right -->
-                <input type="radio" name="rating" id="rate5" value="5"><label for="rate5"></label>
-                <input type="radio" name="rating" id="rate4" value="4"><label for="rate4"></label>
-                <input type="radio" name="rating" id="rate3" value="3"><label for="rate3"></label>
-                <input type="radio" name="rating" id="rate2" value="2"><label for="rate2"></label>
-                <input type="radio" name="rating" id="rate1" value="1"><label for="rate1"></label>
+                <input type="radio" name="rating" id="rate5" value="5" required><label for="rate5"></label>
+                <input type="radio" name="rating" id="rate4" value="4" required><label for="rate4"></label>
+                <input type="radio" name="rating" id="rate3" value="3" required><label for="rate3"></label>
+                <input type="radio" name="rating" id="rate2" value="2" required><label for="rate2"></label>
+                <input type="radio" name="rating" id="rate1" value="1" required><label for="rate1"></label>
             </div>
-            <label>Date of Installation<input type="date" name="install" id="install" required></label>
+            <label>Date of Installation<span class="red">*</span><input type="date" name="install" id="install" required></label>
             <div class="features">
                 Which features did you find useful in the product? (check all that apply)
             </div>
