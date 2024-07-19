@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Project Site Plan</title>
+
+    <meta name="description" content="How to, tutorial, info, contact form">
+    <meta name="author" content="Alex Courter">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="./scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <header id="top">
+        <div>
+            <span>🪙</span><h1>TimeBank</h1>
+        </div>
+        <button class="menu-btn" type="button" title="menu" aria-label="menu"></button>
+        <nav class="site-nav">
+            <ul class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./timebank.html">TimeBank</a></li>
+                <li><a href="./planner.html">Planner</a></li>
+                <li><a href="./tutorial.html">How To</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ht">
+            <h2>How to use TimeBank</h2>
+            <p>The TimeBank page shows you your time budget, with available time, and where your time is being spent. You can adjust your time budget using the planner tool, which lets you add or remove tasks.</p>
+            <picture>
+                <source media="(min-width: 740px)" srcset="./images/bank_large.webp">
+                <img src="./images/bank_small.webp" width="500" height="281" alt="Photo by Brano on Unsplash">
+            </picture>
+        </section>
+        <section class="ht">
+            <h2>Time Management</h2>
+            <picture>
+                <source media="(min-width: 740px)" srcset="./images/clock_large.webp">
+                <img src="./images/clock_small.webp" alt="Photo by Derrick Della on Unsplash">
+            </picture>
+            <p>We are all given the same time. 24 hours in a day, 365.25 days in a year. Every second you read this is important so let's cut to the quick: You can manage your time better. Here's how TimeBank was built to help you with that. TimeBank is a novel time management solution that treats your hours as currency. By thinking of your time like a budget, you can start to see where time is being wasted and how to make the most of your time.</p>
+        </section>
+        <section class="ht">
+            <h2>FAQ</h2>
+            <ul>
+                <li>
+                    <span class="question">What is a time budget?</span>
+                    <p class="answer">A time budget is a way of thinking about your schedule as an account of 24 hours per day. You have to budget how you will use those hours to effectively plan your schedule. Most people take for granted the fact that they need to sleep and eat, and may not even think of how much time they have left after essential tasks like that are completed.</p>
+                </li>
+                <li>
+                    <span class="question">What makes a task essential or non-essential?</span>
+                    <p class="answer">An essential task is necessary for your health or to accomplish your basic day. Examples of essential tasks are sleeping or eating. Non-essential tasks don't necessarily need to be completed every day. In the end, you should decide what you feel is an essential task. It makes sense for a student to put studying under essential or for a worker to put work. Non-essential tasks would be things we want to do, such as seeing a movie.</p>
+                </li>
+                <li>
+                    <span class="question">How does this help me plan effectively?</span>
+                    <p class="answer">TimeBank can help you see where you are spending time, and adjust so that you can eliminate time wasting activities or make more time for your essential tasks.</p>
+                </li>
+                <li>
+                    <span class="question">What is the difference between using TimeBank and a regular schedule app?</span>
+                    <p class="answer">TimeBank is centered on thinking of time as a valuable resource. Other scheduling apps are event-focused, meaning that you don't get much insight into how much time you really have, you only see what events are on your schedule. TimeBank flips this concept to a time-centered approach, allowing you to see where your time is spent each day, and to make adjustments on a large scale for what you want to do with your time. TimeBank is best used as a complement to other scheduling and calendar apps.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="ht">
+            <h2>Contact Us</h2>
+            <p>Got more questions? Send us a message below.</p>
+            <form action="thanks.html" method="get">
+                <fieldset class="user card">
+                    <label>Full Name<span class="red">*</span><input type="text" name="name" id="name" required></label>
+                    <label>Email<span class="red">*</span><input type="email" name="email" id="email" required></label>
+                    <label>Your Message<span class="red">*</span><textarea name="message" required></textarea></label>
+
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alex Courter | New Jersey</p>
+        <p id="lastModified"></p>
+
+        <a href="#top" class="to-top" title="back to top">&#8679;</a>
+    </footer>
+</body>
+</html>

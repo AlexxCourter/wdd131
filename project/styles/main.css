@@ -1,0 +1,388 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --header-font: "PT Serif Caption", serif;
+    --body-font: "Ubuntu", sans-serif;
+    /* colors */
+    --header-bg: #CCC9DC;
+    --body-text-color: #433A3F;
+    --accent: #94E8B4;
+    --logo-bg: #3d5a6c;
+
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+}
+
+p, li, a {
+    font-family: var(--body-font);
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: var(--logo-bg);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+header span, header h1, .logo_example span, .logo_example p {
+    font-size: 2rem;
+    display: inline-block;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.navbar li {
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
+.navbar li a {
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+.navbar li a:hover {
+    background-color: var(--accent);
+    border-radius: 6px;
+    transition: 0.5s ease;
+}
+
+
+
+/* ----- MAIN ----- */
+section {
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+section h2 {
+    background-color: var(--header-bg);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+section p {
+    color: var(--body-text-color);
+}
+
+.card {
+    padding: 2rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #999;
+    background-color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+footer {
+    padding: 3rem 1rem;
+    background-color: var(--logo-bg);
+    color: white;
+    position: relative;
+}
+
+.to-top {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* ----- Home Page ----- */
+.hm .hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hm .hook {
+    font-size: 1.8rem;
+    width: fit-content;
+    padding: 1rem;
+    background-color: rgba(200,200,200,0.65);
+    border-radius: 6px;
+    position: absolute;
+}
+.hm .hook:first-of-type {
+    left: 1rem;
+    top: 6rem;
+    animation: fadein 2s;
+}
+.hm .hook:nth-of-type(2) {
+    left: 1rem;
+    opacity: 0;
+    top: 11rem;
+    animation: fadein 2s 1s forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.hm .subtext {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.hm .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hm .card img {
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* ----- TimeBank Page ----- */
+
+.tb .card {
+    box-shadow: 4px 4px 10px gray;
+    text-align: center;
+    font-size: 1.5rem;
+    height: fit-content;
+}
+
+.tb ul {
+    margin: 1rem;
+}
+
+.tb li {
+    margin: 1rem 0;
+    background-color: var(--header-bg);
+    padding: 0.75rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+.tb li span, .pl .task span {
+    background: linear-gradient(gold, rgb(209, 154, 4));
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 3px solid gold;
+    font-weight: bold;
+}
+.tb li span::after, .pl .task span::after {
+    content: " hrs."
+}
+
+.tb .free, .tb .ess, .tb .non {
+    background-color: aqua;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px gray;
+}
+.tb .ess {background-color: orange;}
+.tb .non {background-color: violet;}
+
+.tb .estimates p {
+    font-size: 1.5rem;
+}
+
+/* ----- Planner Page ----- */
+.pl .ess-container, .pl .noness-container {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0;
+    border: 1px solid rgb(167, 167, 167);
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    min-height: 200px;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 24px 1fr 70px;
+}
+.pl .ess-controls, .pl .noness-controls {
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--header-bg);
+    padding: 0.8rem;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.pl button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    background-color: var(--accent);
+    border: none;
+    box-shadow: 3px 3px 6px gray;
+    cursor: pointer;
+}
+
+.pl button:hover {
+    background-color: #b5ffd1;
+    transition: background-color 0.7s ease;
+}
+
+.pl .delete {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border: 2px solid red;
+    line-height: 1.2rem;
+}
+
+.pl .task-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0.6rem 0;
+    padding: 0.4rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.pl .task {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    vertical-align: center;
+}
+.pl .task span {padding: 0.3rem;}
+
+
+.pl input {
+    padding: 0.5rem;
+}
+.pl input[type="text"] {max-width: 100%;}
+.pl input[type="number"] {max-width: 5rem;}
+
+.pl #ess_dropzone, .pl #noness_dropzone {
+    padding: 1rem;
+    background-color: var(--accent);
+    margin-bottom: 0.5rem;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 6px;
+}
+.pl #noness_dropzone {background-color: var(--header-bg);}
+
+/* ----- Tutorial Page ----- */
+.ht img {
+    width: 100%;
+    height: auto;
+}
+section.ht {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+
+.ht h2 {
+    grid-column: 1/-1;
+}
+
+.ht ul {
+    margin: 0 1rem;
+}
+.ht ul li {
+    margin: 0.5rem 0;
+}
+.ht ul span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ht fieldset {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px gray;
+    font-family: var(--body-font);
+}
+
+.ht fieldset input {
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.ht fieldset label, .ht fieldset input[type='submit'] {
+    margin-top: 1rem;
+}
+.ht fieldset textarea {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+.ht fieldset input[type='submit'] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--logo-bg);
+    color: white;
+    box-shadow: 4px 4px 4px gray;
+}
+.ht fieldset input[type='submit']:hover {
+    background-color: black;
+    transition: background-color 1s ease;
+}
+.red {color: darkred; font-weight: bold;}
+/* ----- Menu Button ----- */
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.75rem;
+    color: white;
+    justify-self:right;
+    margin-right: 0.5rem;
+}
+.menu-btn::before {
+    content: "☰";
+}
+
+.menu-btn.open::before {
+    content: "X";
+}
+
+.site-nav {
+    background-color: rgba(0,0,0,0.75);
+    font-family: var(--header-font);
+    display: none;
+    flex-basis: 100%;
+    
+}
+.site-nav.open {
+    display: block;
+}
