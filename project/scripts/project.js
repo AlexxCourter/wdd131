@@ -142,9 +142,9 @@ class TimeBank {
 
             //icon adjustments
             if(this.data.free > 2) {
-                document.getElementById('pig_icon').src = './images/piggy_icon_happy.png';
+                document.getElementById('pig_icon').src = './images/piggy_icon_happy.webp';
             } else if (this.data.free < 2) {
-                document.getElementById('pig_icon').src = './images/piggy_icon_sad.png';
+                document.getElementById('pig_icon').src = './images/piggy_icon_sad.webp';
             }
         }
     }
