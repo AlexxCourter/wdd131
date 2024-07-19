@@ -386,3 +386,7 @@ section.ht {
 .site-nav.open {
     display: block;
 }
+
+.tk {
+    margin: 1rem;
+}
