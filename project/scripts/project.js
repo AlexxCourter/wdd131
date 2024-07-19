@@ -54,12 +54,6 @@ class HamburgerMenu {
     }
 }
 
-const test = [
-    {task: "test", hours: 2},
-    {task: "test", hours: 4},
-    {task: "test", hours: 5}
-]
-
 class TimeBank {
     key = 'timebank';
     data;
@@ -69,10 +63,10 @@ class TimeBank {
             this.data = this.readFromLS();
         }
         else {
-            //remove test data
+            
             this.data = {
-                'ess': [...test],
-                'noness': [...test],
+                'ess': [],
+                'noness': [],
                 'free': 24
             }
         }
